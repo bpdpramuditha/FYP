@@ -49,10 +49,74 @@
   background-color: #DAA520; 
   color: white;
   padding: 0.5rem 1rem; 
-  border-radius: 0.375rem; 
+  border-radius: 0.475rem; 
   transition: background-color 0.3s ease-in-out; 
 }
 
 .button:hover {
   background-color: #FFD700; 
+}
+
+.navigation-bar-container {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px; 
+  padding-left: 20px; 
+  padding-right: 20px; 
+  background-color: rgba(187, 187, 187, 0.3); 
+  box-shadow: rgba(245, 241, 241, 0) 0px 3px 8px;
+}
+
+@media (min-width: 768px) {
+  .container {
+      padding-left: 128px; 
+      padding-right: 128px; 
+  }
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.9rem; 
+  font-weight: 700; 
+}
+
+.nav-bar-elements
+{
+  display: none; /* Initially hidden */
+
+  /* Show on large screens and above */
+  @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 1.125rem; /* text-lg equivalent in Tailwind CSS */
+      font-weight: 500; /* font-medium equivalent in Tailwind CSS */
+      gap: 2rem; /* gap-8 equivalent in Tailwind CSS */
+  }
+}
+
+.link {
+  cursor: pointer;
+  transition: color 0.3s ease; 
+  color: initial;
+  
+}
+
+.link:hover {
+  color: rgba(34, 33, 33, 0.784); 
+  text-decoration: underline;
 }
