@@ -96,16 +96,16 @@
 
 .nav-bar-elements
 {
-  display: none; /* Initially hidden */
+  display: none;
 
   /* Show on large screens and above */
   @media (min-width: 1024px) {
       display: flex;
       flex-direction: row;
       align-items: center;
-      font-size: 1.125rem; /* text-lg equivalent in Tailwind CSS */
-      font-weight: 500; /* font-medium equivalent in Tailwind CSS */
-      gap: 2rem; /* gap-8 equivalent in Tailwind CSS */
+      font-size: 1.125rem; 
+      font-weight: 500; 
+      gap: 2rem; 
   }
 }
 
@@ -119,4 +119,75 @@
 .link:hover {
   color: rgba(34, 33, 33, 0.784); 
   text-decoration: underline;
+}
+
+.aboutus-container {
+  min-height: 100vh; /*sets minimum height to the full viewport height */
+  display: flex; 
+  flex-direction: column; 
+
+  justify-content: space-between; 
+  align-items: center; 
+
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 6rem; 
+  gap: 1.25rem; 
+
+  
+  @media (min-width: 1024px) {
+      flex-direction: row; 
+      padding-left: 8rem; 
+      padding-right: 8rem; 
+      padding-top: 4rem; 
+  }
+}
+
+.aboutus-para-container {
+  width: 100%; 
+  margin-bottom: 1rem; 
+
+  /* Responsive styles for large screens and above */
+  @media (min-width: 1024px) {
+      width: 75%; 
+  }
+}
+
+.aboutus-para-container > * + * {
+  margin-top: 1rem; 
+}
+
+.abouust-heading {
+    font-size: 2.25rem; 
+    font-weight: 600; 
+    text-align: center; 
+
+    /* Responsive styles for large screens and above */
+    @media (min-width: 1024px) {
+        text-align: start; 
+    }
+}
+
+.aboutus-para {
+  text-align: justify; 
+  
+  /* Responsive styles for large screens and above */
+  @media (min-width: 1024px) {
+      text-align: start; 
+  }
+}
+
+.aboutus-img-container {
+  width: 100%; 
+
+  /* Responsive styles for large screens and above */
+  @media (min-width: 1024px) {
+      width: 75%; 
+  }
+}
+
+.aboutus-img {
+  border-radius: 0.5rem; 
+  width: 100%; 
+  height: auto; 
 }

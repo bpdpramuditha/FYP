@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react';
-import Home from './components/Home'
 import Navbar from './components/Navbar'
+import Home from './components/Home'
+import AboutUs from './components/AboutUs';
 
 const App = () => {
  return(
@@ -12,6 +13,11 @@ const App = () => {
       <div id="home">
         <Home />
       </div>
+
+      <div id="aboutus">
+        <AboutUs />
+      </div>
+      
     </main>
     
   </div>

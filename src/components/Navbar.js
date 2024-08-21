@@ -15,7 +15,7 @@ const Navbar = () => {
                         <Link className="link" to="home" spy={true} smooth={true} duration={500}>
                             Home
                         </Link>
-                        <Link className="link" to="about" spy={true} smooth={true} duration={500}>
+                        <Link className="link" to="aboutus" spy={true} smooth={true} duration={500}>
                             About Us
                         </Link>
                         <Link className="link" to="services" spy={true} smooth={true} duration={500}>
@@ -27,16 +27,11 @@ const Navbar = () => {
                         <Link className="link" to="contact" spy={true} smooth={true} duration={500}>
                             Contact Us
                         </Link>
-
                     </nav>
-
                 </div>
-
             </div>
         </div>
     );
-
-
 };
 
 export default Navbar;
